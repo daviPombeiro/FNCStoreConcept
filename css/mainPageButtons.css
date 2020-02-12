@@ -1,0 +1,51 @@
+@import '../scss/main.scss';
+
+.wrapper {
+  float: left;
+}
+
+.wrapper a{
+  display: block;
+  height: 38px;
+  width: 141px;
+
+  border-color: #FF5900;
+  border-width: 2px;
+  border-style: solid;
+
+  background: unset;
+
+  align-content: center;
+
+  position: relative;
+  transition: all .35s;
+}
+
+.wrapper a span{
+  position: relative;
+  z-index: 2;
+  color: #FF5900;
+  font-size: 21px;
+  font-family: Monument;
+
+  margin-top: 2px;
+}
+
+.wrapper a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #FF5900;
+  transition: all .35s;
+}
+
+.wrapper a:hover > span{
+  color: black;
+}
+
+.wrapper a:hover:after{
+  width: 100%;
+}
