@@ -1,0 +1,16 @@
+
+.transition-swipe {
+    transition: 500ms;
+    height: 100vh;
+    transform: translateY(0);
+    transition-delay: 10ms;
+    transform-origin: bottom;
+}
+
+html.is-animating .transition-swipe {
+    transform: translateY(100%);
+}
+
+html.is-leaving .transition-swipe {
+    transform: translateY(-100%);
+}
